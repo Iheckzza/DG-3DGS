@@ -134,4 +134,29 @@ body {
 }
 
 
+.vertical-title {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin-right: 20px;
+    font-size: 24px;
+    text-align: center;
+}
 
+.video-grid {
+    display: flex; /* 使用 Flexbox */
+    flex-wrap: wrap; /* 允许换行 */
+    justify-content: space-between; /* 在容器内均匀分配空白 */
+    max-width: 1200px; /* 设置最大宽度 */
+    width: 100%; /* 容器宽度为100% */
+    gap: 20px; /* 视频之间的间隔 */
+}
+
+.video-item {
+    text-align: center;
+    flex: 1 1 calc(25% - 20px); /* 每个视频项占据25%宽度并留出间隔 */
+    box-sizing: border-box; /* 包含padding和border在内的计算 */
+}
+
+.video-title {
+    margin-bottom: 10px;
+}
