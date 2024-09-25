@@ -1,80 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="DESCRIPTION META TAG">
+    <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+    <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+    <meta property="og:url" content="URL OF THE WEBSITE"/>
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/your_banner_image.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+    <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+    <title>DG-3DGS: Dynamic Growing 3D Gaussian Splatting for Monocular Laparoscopic Sequential Scene
+        Reconstruction</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
 
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>并列显示图片</title>-->
+<!--    <style>-->
+<!--        .container {-->
+<!--            display: flex; /* 使用 flexbox 布局 */-->
+<!--            justify-content: center; /* 居中对齐 */-->
+<!--            gap: 10px; /* 图片之间的间隔 */-->
+<!--        }-->
+<!--        img {-->
+<!--            max-width: 100%; /* 自适应宽度 */-->
+<!--            height: auto; /* 保持高度比例 */-->
+<!--        }-->
+<!--    </style>-->
+
+
 </head>
 <body>
 
 
-  <section class="hero">
+<section class="hero">
     <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-3 publication-title">DG-3DGS: Dynamic Growing 3D Gaussian Splatting for
+                        Monocular Laparoscopic Sequential Scene Reconstruction</h1>
+                    <div class="is-size-5 publication-authors">
+                        <!-- Paper authors -->
+                        <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Ziang Zhang</a><sup>a</sup>,</span>
+                        <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Hong Song</a><sup>b,*</sup>,</span>
+                        <span class="author-block">
+                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jingfan Fan</a><sup>c,*</sup>,</span>
+                        <span class="author-block">
+                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Tianyu Fu</a><sup>a</sup>,</span>
+                        <span class="author-block">
+                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Danni Ai</a><sup>c</sup>,</span>
+                        <span class="author-block">
+                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Deqaing Xiao</a><sup>c,*</sup>,</span>
+                        <span class="author-block">
+                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jian Yang</a>
+
                   </span>
-                  </div>
+                    </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"> <br> </span>
+                        <span class="eql-cntrb"><small><br><sup>a</sup>The School of Medical Technology, Beijing Institute of Technology, Beijing 100081, China</small></span>
+                        <span class="eql-cntrb"><small><br><sup>b</sup>The School of Computer Science&Technology, Beijing Institute of Technology, Beijing 100081, China</small></span>
+                        <span class="eql-cntrb"><small><br><sup>c</sup>The School of Optics and Photonics, Beijing Institute of Technology, Beijing 100081, China</small></span>
+                    </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <!-- Arxiv PDF link -->
+                            <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
+                           class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
@@ -82,10 +112,10 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                            <!-- Supplementary PDF link -->
+                            <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
+                         class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
                       </span>
@@ -93,10 +123,10 @@
                     </a>
                   </span>
 
-                  <!-- Github link -->
-                  <span class="link-block">
+                            <!-- Github link -->
+                            <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+                       class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
@@ -104,209 +134,347 @@
                   </a>
                 </span>
 
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                            <!-- ArXiv abstract Link -->
+                            <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
+                     class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
                 </a>
               </span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Monocular laparoscopic videos scene reconstruction is essential for visualization enhancement of
+                        surgical applications in computer-assisted surgery. However, constrained by the limited range of
+                        viewpoints and narrow field of view inherent in laparoscopic, currently most exiting methods
+                        like Neural Radiance Field (NeRF) or 3D Gaussian Splatting (3DGS) rely heavily on high-accurate
+                        pre-processed camera poses as well as initial reconstruction data, which imposes stringent
+                        requirements on monocular endoscopic video quality and navigation equipment. To relax these
+                        limitations, in this paper we utilize the continuity of the input video stream and the feature
+                        correspondences of interframes to achieve novel view synthesis, and propose a novel Dynamic
+                        Growing 3D Gaussian splatting (DG-3DGS) architecture to progressively grow the gaussian set by
+                        taking continuous monocular laparoscopic frames and reconstruct the laparoscopic scene. 1) Based
+                        on dense feature matching prior, we present a 2D-3D displacement vector field projecting
+                        optimization method to estimate the small pose transformation between sequential interframes. 2)
+                        Grounded in the initial gaussian set generated from the first frame and pose transformation, we
+                        propose a dynamic gaussian set growing strategy to generate new view of transformed gaussian set
+                        with frames flow. 3) Integrated with 1 and 2, we design a novel sequential reconstruction
+                        architecture under monocular laparoscopic scene and generate high-quality gaussian reconstructed
+                        model. The evaluation is conducted on two public laparoscopic datasets: Scared and C3VD. The
+                        experimental results show the proposed architecture outperforms state-of-the-art methods in
+                        PSRN, SSIM, LIPIS and qualitative comparison. 
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 <!-- End paper abstract -->
 
 
 <!-- Image carousel -->
 <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
+    <div class="hero-body">
+        <div class="container">
+            <div id="results-carousel" class="carousel results-carousel">
+                <div class="item">
+                    <!-- Your image here -->
+                    <img src="static/images/Figure%201.PNG" alt="MY ALT TEXT"/>
+                    <h2 class="subtitle has-text-centered">
+                        First image description.
+                    </h2>
+                </div>
+                <div class="item">
+                    <!-- Your image here -->
+                    <img src="static/images/Figure%202.PNG" alt="MY ALT TEXT"/>
+                    <h2 class="subtitle has-text-centered">
+                        Second image description.
+                    </h2>
+                </div>
+                <div class="item">
+                    <!-- Your image here -->
+                    <img src="static/images/Figure%204.PNG" alt="MY ALT TEXT"/>
+                    <h2 class="subtitle has-text-centered">
+                        Third image description.
+                    </h2>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-</div>
 </section>
 <!-- End image carousel -->
 
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="hero-body" style="display: flex; align-items: flex-start;">
+            <h2 class="vertical-title">纵向标题</h2> <!-- 纵向标题 -->
+            <div class="video-grid" style="display: flex; flex-wrap: wrap; gap: 20px;">
+                <!-- 每个视频项 -->
+                <div class="video-item">
+                    <video poster="static/video/d1k1_render_10.mp4" id="video1" autoplay controls muted loop width="200">
+                        <source src="static/video/d1k1_render_10.mp4" type="video/mp4">
+                    </video>
+                    <h3>D1K1 Predict</h3>
+                </div>
+                <div class="video-item">
+                    <video poster="static/video/d2k3_render_10.mp4" id="video2" autoplay controls muted loop width="200">
+                        <source src="static/video/d2k3_render_10.mp4" type="video/mp4">
+                    </video>
+                    <h3>D2K3 Predict</h3>
+                </div>
+                <div class="video-item">
+                    <video poster="static/video/d4k2_render_10.mp4" id="video3" autoplay controls muted loop width="200">
+                        <source src="static/video/d4k2_render_10.mp4" type="video/mp4">
+                    </video>
+                    <h3>D4K2 Predict</h3>
+                </div>
+                <div class="video-item">
+                    <video poster="static/video/d8k1_render_10.mp4" id="video4" autoplay controls muted loop width="200">
+                        <source src="static/video/d8k1_render_10.mp4" type="video/mp4">
+                    </video>
+                    <h3>D8K1 Predict</h3>
+                </div>
+                <div class="video-item">
+                    <video poster="static/video/d1k1_render_gt.mp4" id="video5" autoplay controls muted loop width="200">
+                        <source src="static/video/d1k1_render_gt.mp4" type="video/mp4">
+                    </video>
+                    <h3>D1K1 GT</h3>
+                </div>
+                <div class="video-item">
+                    <video poster="static/video/d2k3_render_gt.mp4" id="video6" autoplay controls muted loop width="200">
+                        <source src="static/video/d2k3_render_gt.mp4" type="video/mp4">
+                    </video>
+                    <h3>D2K3 GT</h3>
+                </div>
+                <div class="video-item">
+                    <video poster="static/video/d4k2_render_gt.mp4" id="video7" autoplay controls muted loop width="200">
+                        <source src="static/video/d4k2_render_gt.mp4" type="video/mp4">
+                    </video>
+                    <h3>D4K2 GT</h3>
+                </div>
+                <div class="video-item">
+                    <video poster="static/video/d8k1_render_gt.mp4" id="video8" autoplay controls muted loop width="200">
+                        <source src="static/video/d8k1_render_gt.mp4" type="video/mp4">
+                    </video>
+                    <h3>D8K1 GT</h3>
+                </div>
+                <div class="video-item">
+                    <video poster="static/video/cecum_render_10.mp4" id="video9" autoplay controls muted loop width="200">
+                        <source src="static/video/cecum_render_10.mp4" type="video/mp4">
+                    </video>
+                    <h3>Cecum Predict</h3>
+                </div>
+                <div class="video-item">
+                    <video poster="static/video/desc_render_10.mp4" id="video10" autoplay controls muted loop width="200">
+                        <source src="static/video/desc_render_10.mp4" type="video/mp4">
+                    </video>
+                    <h3>Desc Predict</h3>
+                </div>
+                <div class="video-item">
+                    <video poster="static/video/sigmoid_render_10.mp4" id="video11" autoplay controls muted loop width="200">
+                        <source src="static/video/sigmoid_render_10.mp4" type="video/mp4">
+                    </video>
+                    <h3>Sigmoid Predict</h3>
+                </div>
+                <div class="video-item">
+                    <video poster="static/video/trans_render_10.mp4" id="video12" autoplay controls muted loop width="200">
+                        <source src="static/video/trans_render_10.mp4" type="video/mp4">
+                    </video>
+                    <h3>Trans Predict</h3>
+                </div>
+                <div class="video-item">
+                    <video poster="static/video/cecum_render_10.mp4" id="video13" autoplay controls muted loop width="200">
+                        <source src="static/video/cecum_render_10.mp4" type="video/mp4">
+                    </video>
+                    <h3>Cecum GT</h3>
+                </div>
+                <div class="video-item">
+                    <video poster="static/video/desc_render_gt.mp4" id="video14" autoplay controls muted loop width="200">
+                        <source src="static/video/desc_render_gt.mp4" type="video/mp4">
+                    </video>
+                    <h3>Desc GT</h3>
+                </div>
+                <div class="video-item">
+                    <video poster="static/video/sigmoid_render_gt.mp4" id="video15" autoplay controls muted loop width="200">
+                        <source src="static/video/sigmoid_render_gt.mp4" type="video/mp4">
+                    </video>
+                    <h3>Sigmoid GT</h3>
+                </div>
+                <div class="video-item">
+                    <video poster="static/video/trans_render_gt.mp4" id="video16" autoplay controls muted loop width="200">
+                        <source src="static/video/trans_render_gt.mp4" type="video/mp4">
+                    </video>
+                    <h3>Trans GT</h3>
+                </div>
 
 
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
+<!--<section class="hero teaser">-->
+<!--    <div class="container is-max-desktop">-->
+<!--        <div class="hero-body">-->
+<!--                <div class="video-container" style="display: flex; justify-content: center; gap: 20px;">-->
+<!--                <h3>视频标题 1</h3>-->
+<!--                <video poster="static/videos/banner_video.mp4" id="video1" autoplay controls muted loop width="400">-->
+<!--                    <source src="static/videos/banner_video.mp4" type="video/mp4">-->
+<!--                </video>-->
+<!--                <h3>视频标题 1</h3>-->
+<!--                <video poster="static/video/d1k1_render_gt.mp4" id="video2" autoplay controls muted loop width="480">-->
+<!--                    <source src="static/video/d1k1_render_gt.mp4" type="video/mp4">-->
+<!--                </video>-->
+<!--                <video poster="static/videos/banner_video.mp4" id="video3" autoplay controls muted loop width="400">-->
+<!--                    <source src="static/videos/banner_video.mp4" type="video/mp4">-->
+<!--                </video>-->
+<!--            </div>-->
+<!--            <h2 class="subtitle has-text-centered">-->
+<!--                Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at,-->
+<!--                placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.-->
+<!--            </h2>-->
+<!--&lt;!&ndash;            <video poster="" id="tree" autoplay controls muted loop height="100%">&ndash;&gt;-->
+<!--&lt;!&ndash;                &lt;!&ndash; Your video here &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                <source src="static/videos/banner_video.mp4"&ndash;&gt;-->
+<!--&lt;!&ndash;                        type="video/mp4">&ndash;&gt;-->
+<!--&lt;!&ndash;            </video>&ndash;&gt;-->
+<!--&lt;!&ndash;            <h2 class="subtitle has-text-centered">&ndash;&gt;-->
+<!--&lt;!&ndash;                Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at,&ndash;&gt;-->
+<!--&lt;!&ndash;                placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.&ndash;&gt;-->
+<!--&lt;!&ndash;            </h2>&ndash;&gt;-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 
 
+<!--&lt;!&ndash;<div class="container">&ndash;&gt;-->
+<!--&lt;!&ndash;    <img src="static/images/carousel1.jpg" alt="Image 1">&ndash;&gt;-->
+<!--&lt;!&ndash;    <img src="static/images/carousel1.jpg" alt="Image 2">&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+<!--&lt;!&ndash; Youtube video &ndash;&gt;-->
+<!--&lt;!&ndash;<section class="hero is-small is-light">&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="hero-body">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="container">&ndash;&gt;-->
+<!--&lt;!&ndash;            &lt;!&ndash; Paper video. &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;            <h2 class="title is-3">Video Presentation</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="columns is-centered has-text-centered">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="column is-four-fifths">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <div class="publication-video">&ndash;&gt;-->
+<!--&lt;!&ndash;                        &lt;!&ndash; Youtube embed code here &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                        <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0"&ndash;&gt;-->
+<!--&lt;!&ndash;                                allow="autoplay; encrypted-media" allowfullscreen></iframe>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;</section>&ndash;&gt;-->
+<!--&lt;!&ndash; End youtube video &ndash;&gt;-->
 
 
+<!--&lt;!&ndash; Video carousel &ndash;&gt;-->
+<!--<section class="hero is-small">-->
+<!--    <div class="hero-body">-->
+<!--        <div class="container">-->
+<!--            <h2 class="title is-3">Another Carousel</h2>-->
+<!--            <div id="results-carousel" class="carousel results-carousel">-->
+<!--                <div class="item item-video1">-->
+<!--                    <video poster="" id="video1" autoplay controls muted loop height="100%">-->
+<!--                        &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--                        <source src="static/videos/carousel1.mp4"-->
+<!--                                type="video/mp4">-->
+<!--                    </video>-->
+<!--                </div>-->
+<!--                <div class="item item-video2">-->
+<!--                    <video poster="" id="video2" autoplay controls muted loop height="100%">-->
+<!--                        &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--                        <source src="static/videos/carousel2.mp4"-->
+<!--                                type="video/mp4">-->
+<!--                    </video>-->
+<!--                </div>-->
+<!--                <div class="item item-video3">-->
+<!--                    <video poster="" id="video3" autoplay controls muted loop height="100%">\-->
+<!--                        &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--                        <source src="static/videos/carousel3.mp4"-->
+<!--                                type="video/mp4">-->
+<!--                    </video>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!--&lt;!&ndash; End video carousel &ndash;&gt;-->
 
 
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
+<!--&lt;!&ndash; Paper poster &ndash;&gt;-->
+<!--<section class="hero is-small is-light">-->
+<!--    <div class="hero-body">-->
+<!--        <div class="container">-->
+<!--            <h2 class="title">Poster</h2>-->
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
+<!--            <iframe src="static/pdfs/sample.pdf" width="100%" height="550">-->
+<!--            </iframe>-->
 
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!--&lt;!&ndash;End paper poster &ndash;&gt;-->
 
 
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+<!--&lt;!&ndash;BibTex citation &ndash;&gt;-->
+<!--<section class="section" id="BibTeX">-->
+<!--    <div class="container is-max-desktop content">-->
+<!--        <h2 class="title">BibTeX</h2>-->
+<!--        <pre><code>BibTex Code Here</code></pre>-->
+<!--    </div>-->
+<!--</section>-->
+<!--&lt;!&ndash;End BibTex citation &ndash;&gt;-->
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
 
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+<!--<footer class="footer">-->
+<!--    <div class="container">-->
+<!--        <div class="columns is-centered">-->
+<!--            <div class="column is-8">-->
+<!--                <div class="content">-->
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+<!--                    <p>-->
+<!--                        This page was built using the <a-->
+<!--                            href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic-->
+<!--                        Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io"-->
+<!--                                                                                target="_blank">Nerfies</a> project-->
+<!--                        page.-->
+<!--                        You are free to borrow the source code of this website, we just ask that you link back to this-->
+<!--                        page in the footer. <br> This website is licensed under a <a rel="license"-->
+<!--                                                                                     href="http://creativecommons.org/licenses/by-sa/4.0/"-->
+<!--                                                                                     target="_blank">Creative-->
+<!--                        Commons Attribution-ShareAlike 4.0 International License</a>.-->
+<!--                    </p>-->
 
-    <!-- End of Statcounter Code -->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</footer>-->
 
-  </body>
-  </html>
+<!--&lt;!&ndash; Statcounter tracking code &ndash;&gt;-->
+
+<!--&lt;!&ndash; You can add a tracker to track page visits by creating an account at statcounter.com &ndash;&gt;-->
+
+<!--&lt;!&ndash; End of Statcounter Code &ndash;&gt;-->
+
+
+</body>
+</html>
