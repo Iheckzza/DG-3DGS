@@ -45,21 +45,6 @@
     <script src="static/js/bulma-slider.min.js"></script>
     <script src="static/js/index.js"></script>
 
-<!--    <meta charset="UTF-8">-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-<!--    <title>并列显示图片</title>-->
-<!--    <style>-->
-<!--        .container {-->
-<!--            display: flex; /* 使用 flexbox 布局 */-->
-<!--            justify-content: center; /* 居中对齐 */-->
-<!--            gap: 10px; /* 图片之间的间隔 */-->
-<!--        }-->
-<!--        img {-->
-<!--            max-width: 100%; /* 自适应宽度 */-->
-<!--            height: auto; /* 保持高度比例 */-->
-<!--        }-->
-<!--    </style>-->
-
 
 </head>
 <body>
@@ -222,142 +207,108 @@
 
 <section class="hero teaser">
     <div class="container is-max-desktop">
-        <div class="hero-body" style="display: flex; align-items: flex-start;">
-            <h2 class="vertical-title">纵向标题</h2> <!-- 纵向标题 -->
+    <div class="hero-body" style="display: flex; align-items: flex-start;">
+<!--            <h2 class="vertical-title">Scared Dataset</h2> &lt;!&ndash; 纵向标题 &ndash;&gt;-->
             <div class="video-grid" style="display: flex; flex-wrap: wrap; gap: 20px;">
                 <!-- 每个视频项 -->
                 <div class="video-item">
-                    <video poster="static/video/d1k1_render_10.mp4" id="video1" autoplay controls muted loop width="200">
-                        <source src="static/video/d1k1_render_10.mp4" type="video/mp4">
+                    <video poster="static/v0/d1k1_render_10.mp4" id="video1" autoplay controls muted loop width="300">
+                        <source src="static/v0/d1k1_render_10.mp4" type="video/mp4">
                     </video>
                     <h3>D1K1 Predict</h3>
                 </div>
                 <div class="video-item">
-                    <video poster="static/video/d2k3_render_10.mp4" id="video2" autoplay controls muted loop width="200">
-                        <source src="static/video/d2k3_render_10.mp4" type="video/mp4">
+                    <video poster="static/v0/d2k3_render_10.mp4" id="video2" autoplay controls muted loop width="300">
+                        <source src="static/v0/d2k3_render_10.mp4" type="video/mp4">
                     </video>
                     <h3>D2K3 Predict</h3>
                 </div>
                 <div class="video-item">
-                    <video poster="static/video/d4k2_render_10.mp4" id="video3" autoplay controls muted loop width="200">
-                        <source src="static/video/d4k2_render_10.mp4" type="video/mp4">
+                    <video poster="static/v0/d4k2_render_10.mp4" id="video3" autoplay controls muted loop width="300">
+                        <source src="static/v0/d4k2_render_10.mp4" type="video/mp4">
                     </video>
                     <h3>D4K2 Predict</h3>
                 </div>
                 <div class="video-item">
-                    <video poster="static/video/d8k1_render_10.mp4" id="video4" autoplay controls muted loop width="200">
-                        <source src="static/video/d8k1_render_10.mp4" type="video/mp4">
+                    <video poster="static/v0/d8k1_render_10.mp4" id="video4" autoplay controls muted loop width="300">
+                        <source src="static/v0/d8k1_render_10.mp4" type="video/mp4">
                     </video>
                     <h3>D8K1 Predict</h3>
                 </div>
                 <div class="video-item">
-                    <video poster="static/video/d1k1_render_gt.mp4" id="video5" autoplay controls muted loop width="200">
-                        <source src="static/video/d1k1_render_gt.mp4" type="video/mp4">
+                    <video poster="static/v0/d1k1_render_gt.mp4" id="video5" autoplay controls muted loop width="300">
+                        <source src="static/v0/d1k1_render_gt.mp4" type="video/mp4">
                     </video>
                     <h3>D1K1 GT</h3>
                 </div>
                 <div class="video-item">
-                    <video poster="static/video/d2k3_render_gt.mp4" id="video6" autoplay controls muted loop width="200">
-                        <source src="static/video/d2k3_render_gt.mp4" type="video/mp4">
+                    <video poster="static/v0/d2k3_render_gt.mp4" id="video6" autoplay controls muted loop width="300">
+                        <source src="static/v0/d2k3_render_gt.mp4" type="video/mp4">
                     </video>
                     <h3>D2K3 GT</h3>
                 </div>
                 <div class="video-item">
-                    <video poster="static/video/d4k2_render_gt.mp4" id="video7" autoplay controls muted loop width="200">
-                        <source src="static/video/d4k2_render_gt.mp4" type="video/mp4">
+                    <video poster="static/v0/d4k2_render_gt.mp4" id="video7" autoplay controls muted loop width="300">
+                        <source src="static/v0/d4k2_render_gt.mp4" type="video/mp4">
                     </video>
                     <h3>D4K2 GT</h3>
                 </div>
                 <div class="video-item">
-                    <video poster="static/video/d8k1_render_gt.mp4" id="video8" autoplay controls muted loop width="200">
-                        <source src="static/video/d8k1_render_gt.mp4" type="video/mp4">
+                    <video poster="static/v0/d8k1_render_gt.mp4" id="video8" autoplay controls muted loop width="300">
+                        <source src="static/v0/d8k1_render_gt.mp4" type="video/mp4">
                     </video>
                     <h3>D8K1 GT</h3>
                 </div>
+<!--                <h2 class="vertical-title">C3VD Dataset</h2> &lt;!&ndash; 纵向标题 &ndash;&gt;-->
                 <div class="video-item">
-                    <video poster="static/video/cecum_render_10.mp4" id="video9" autoplay controls muted loop width="200">
-                        <source src="static/video/cecum_render_10.mp4" type="video/mp4">
+                    <video poster="static/v0/cecum_render_10.mp4" id="video9" autoplay controls muted loop width="300">
+                        <source src="static/v0/cecum_render_10.mp4" type="video/mp4">
                     </video>
                     <h3>Cecum Predict</h3>
                 </div>
                 <div class="video-item">
-                    <video poster="static/video/desc_render_10.mp4" id="video10" autoplay controls muted loop width="200">
-                        <source src="static/video/desc_render_10.mp4" type="video/mp4">
+                    <video poster="static/v0/desc_render_10.mp4" id="video10" autoplay controls muted loop width="300">
+                        <source src="static/v0/desc_render_10.mp4" type="video/mp4">
                     </video>
                     <h3>Desc Predict</h3>
                 </div>
                 <div class="video-item">
-                    <video poster="static/video/sigmoid_render_10.mp4" id="video11" autoplay controls muted loop width="200">
-                        <source src="static/video/sigmoid_render_10.mp4" type="video/mp4">
+                    <video poster="static/v0/sigmoid_render_10.mp4" id="video11" autoplay controls muted loop width="300">
+                        <source src="static/v0/sigmoid_render_10.mp4" type="video/mp4">
                     </video>
                     <h3>Sigmoid Predict</h3>
                 </div>
                 <div class="video-item">
-                    <video poster="static/video/trans_render_10.mp4" id="video12" autoplay controls muted loop width="200">
-                        <source src="static/video/trans_render_10.mp4" type="video/mp4">
+                    <video poster="static/v0/trans_render_10.mp4" id="video12" autoplay controls muted loop width="300">
+                        <source src="static/v0/trans_render_10.mp4" type="video/mp4">
                     </video>
                     <h3>Trans Predict</h3>
                 </div>
                 <div class="video-item">
-                    <video poster="static/video/cecum_render_10.mp4" id="video13" autoplay controls muted loop width="200">
-                        <source src="static/video/cecum_render_10.mp4" type="video/mp4">
+                    <video poster="static/v0/cecum_render_gt.mp4" id="video13" autoplay controls muted loop width="300">
+                        <source src="static/v0/cecum_render_gt.mp4" type="video/mp4">
                     </video>
                     <h3>Cecum GT</h3>
                 </div>
                 <div class="video-item">
-                    <video poster="static/video/desc_render_gt.mp4" id="video14" autoplay controls muted loop width="200">
-                        <source src="static/video/desc_render_gt.mp4" type="video/mp4">
+                    <video poster="static/v0/desc_render_gt.mp4" id="video14" autoplay controls muted loop width="300">
+                        <source src="static/v0/desc_render_gt.mp4" type="video/mp4">
                     </video>
                     <h3>Desc GT</h3>
                 </div>
                 <div class="video-item">
-                    <video poster="static/video/sigmoid_render_gt.mp4" id="video15" autoplay controls muted loop width="200">
-                        <source src="static/video/sigmoid_render_gt.mp4" type="video/mp4">
+                    <video poster="static/v0/sigmoid_render_gt.mp4" id="video15" autoplay controls muted loop width="300">
+                        <source src="static/v0/sigmoid_render_gt.mp4" type="video/mp4">
                     </video>
                     <h3>Sigmoid GT</h3>
                 </div>
                 <div class="video-item">
-                    <video poster="static/video/trans_render_gt.mp4" id="video16" autoplay controls muted loop width="200">
-                        <source src="static/video/trans_render_gt.mp4" type="video/mp4">
+                    <video poster="static/v0/trans_render_gt.mp4" id="video16" autoplay controls muted loop width="300">
+                        <source src="static/v0/trans_render_gt.mp4" type="video/mp4">
                     </video>
                     <h3>Trans GT</h3>
                 </div>
-
-
-<!--<section class="hero teaser">-->
-<!--    <div class="container is-max-desktop">-->
-<!--        <div class="hero-body">-->
-<!--                <div class="video-container" style="display: flex; justify-content: center; gap: 20px;">-->
-<!--                <h3>视频标题 1</h3>-->
-<!--                <video poster="static/videos/banner_video.mp4" id="video1" autoplay controls muted loop width="400">-->
-<!--                    <source src="static/videos/banner_video.mp4" type="video/mp4">-->
-<!--                </video>-->
-<!--                <h3>视频标题 1</h3>-->
-<!--                <video poster="static/video/d1k1_render_gt.mp4" id="video2" autoplay controls muted loop width="480">-->
-<!--                    <source src="static/video/d1k1_render_gt.mp4" type="video/mp4">-->
-<!--                </video>-->
-<!--                <video poster="static/videos/banner_video.mp4" id="video3" autoplay controls muted loop width="400">-->
-<!--                    <source src="static/videos/banner_video.mp4" type="video/mp4">-->
-<!--                </video>-->
-<!--            </div>-->
-<!--            <h2 class="subtitle has-text-centered">-->
-<!--                Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at,-->
-<!--                placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.-->
-<!--            </h2>-->
-<!--&lt;!&ndash;            <video poster="" id="tree" autoplay controls muted loop height="100%">&ndash;&gt;-->
-<!--&lt;!&ndash;                &lt;!&ndash; Your video here &ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;                <source src="static/videos/banner_video.mp4"&ndash;&gt;-->
-<!--&lt;!&ndash;                        type="video/mp4">&ndash;&gt;-->
-<!--&lt;!&ndash;            </video>&ndash;&gt;-->
-<!--&lt;!&ndash;            <h2 class="subtitle has-text-centered">&ndash;&gt;-->
-<!--&lt;!&ndash;                Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at,&ndash;&gt;-->
-<!--&lt;!&ndash;                placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.&ndash;&gt;-->
-<!--&lt;!&ndash;            </h2>&ndash;&gt;-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-
-
+                 w
 <!--&lt;!&ndash;<div class="container">&ndash;&gt;-->
 <!--&lt;!&ndash;    <img src="static/images/carousel1.jpg" alt="Image 1">&ndash;&gt;-->
 <!--&lt;!&ndash;    <img src="static/images/carousel1.jpg" alt="Image 2">&ndash;&gt;-->
@@ -385,7 +336,7 @@
 <!--&lt;!&ndash; End youtube video &ndash;&gt;-->
 
 
-<!--&lt;!&ndash; Video carousel &ndash;&gt;-->
+<!-- Video carousel -->
 <!--<section class="hero is-small">-->
 <!--    <div class="hero-body">-->
 <!--        <div class="container">-->
@@ -416,10 +367,10 @@
 <!--        </div>-->
 <!--    </div>-->
 <!--</section>-->
-<!--&lt;!&ndash; End video carousel &ndash;&gt;-->
+<!-- End video carousel -->
 
 
-<!--&lt;!&ndash; Paper poster &ndash;&gt;-->
+<!-- Paper poster -->
 <!--<section class="hero is-small is-light">-->
 <!--    <div class="hero-body">-->
 <!--        <div class="container">-->
@@ -431,17 +382,17 @@
 <!--        </div>-->
 <!--    </div>-->
 <!--</section>-->
-<!--&lt;!&ndash;End paper poster &ndash;&gt;-->
+<!--End paper poster -->
 
 
-<!--&lt;!&ndash;BibTex citation &ndash;&gt;-->
-<!--<section class="section" id="BibTeX">-->
-<!--    <div class="container is-max-desktop content">-->
-<!--        <h2 class="title">BibTeX</h2>-->
-<!--        <pre><code>BibTex Code Here</code></pre>-->
-<!--    </div>-->
-<!--</section>-->
-<!--&lt;!&ndash;End BibTex citation &ndash;&gt;-->
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
 
 
 <!--<footer class="footer">-->
@@ -469,11 +420,11 @@
 <!--    </div>-->
 <!--</footer>-->
 
-<!--&lt;!&ndash; Statcounter tracking code &ndash;&gt;-->
+<!-- Statcounter tracking code -->
 
-<!--&lt;!&ndash; You can add a tracker to track page visits by creating an account at statcounter.com &ndash;&gt;-->
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-<!--&lt;!&ndash; End of Statcounter Code &ndash;&gt;-->
+<!-- End of Statcounter Code -->
 
 
 </body>
