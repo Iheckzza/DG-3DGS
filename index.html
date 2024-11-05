@@ -49,7 +49,6 @@
 </head>
 <body>
 
-
 <section class="hero">
     <div class="hero-body">
         <div class="container is-max-desktop">
@@ -99,7 +98,7 @@
 
                             <!-- Supplementary PDF link -->
                             <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      <a href="static/pdfs/Main Document.pdf" target="_blank"
                          class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -115,7 +114,7 @@
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Code(Coming Soon)</span>
                   </a>
                 </span>
 
@@ -137,6 +136,23 @@
     </div>
 </section>
 
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/v0/video_submit.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquai. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
 <!-- Paper abstract -->
 <section class="section hero is-light">
     <div class="container is-max-desktop">
@@ -145,25 +161,20 @@
                 <h2 class="title is-3">Abstract</h2>
                 <div class="content has-text-justified">
                     <p>
-                        Monocular laparoscopic videos scene reconstruction is essential for visualization enhancement of
-                        surgical applications in computer-assisted surgery. However, constrained by the limited range of
-                        viewpoints and narrow field of view inherent in laparoscopic, currently most exiting methods
-                        like Neural Radiance Field (NeRF) or 3D Gaussian Splatting (3DGS) rely heavily on high-accurate
-                        pre-processed camera poses as well as initial reconstruction data, which imposes stringent
-                        requirements on monocular endoscopic video quality and navigation equipment. To relax these
-                        limitations, in this paper we utilize the continuity of the input video stream and the feature
-                        correspondences of interframes to achieve novel view synthesis, and propose a novel Dynamic
-                        Growing 3D Gaussian splatting (DG-3DGS) architecture to progressively grow the gaussian set by
-                        taking continuous monocular laparoscopic frames and reconstruct the laparoscopic scene. 1) Based
-                        on dense feature matching prior, we present a 2D-3D displacement vector field projecting
-                        optimization method to estimate the small pose transformation between sequential interframes. 2)
-                        Grounded in the initial gaussian set generated from the first frame and pose transformation, we
-                        propose a dynamic gaussian set growing strategy to generate new view of transformed gaussian set
-                        with frames flow. 3) Integrated with 1 and 2, we design a novel sequential reconstruction
-                        architecture under monocular laparoscopic scene and generate high-quality gaussian reconstructed
-                        model. The evaluation is conducted on two public laparoscopic datasets: Scared and C3VD. The
-                        experimental results show the proposed architecture outperforms state-of-the-art methods in
-                        PSRN, SSIM, LIPIS and qualitative comparison. 
+                        Scene reconstruction of monocular endoscope video is essential for the enhancement of Surgical Endoscope Image
+                        Analysis and Application. However, restricted by the narrow space of endoscopic movement and the obstruction of
+                        vision within cavities, it’s difficult for most conventional methods to conduct high-quality reconstruction. To
+                        overcome these challenges, a novel dynamic growing 3D gaussian splatting architecture is proposed to construct
+                        the 3D model of endoscopic scene without pre-compute camera poses or Structure from Motion. Firstly, to establish
+                        spatial feature associations between interframe, a 2D 3D displacement field is designed based on dense feature
+                        matches and depth prediction. On this basis, a novel displacement field variational optimization is developed to
+                        acquire relative poses by minimizing the energy functional of field transformation. Secondly, to address the
+                        constraint of endoscopic view, by gaussian dynamic transformation and differential gradient field optimization,
+                        a novel dynamic gaussian growing strategy is proposed to sequentially grow the local gaussian model. Finally, a
+                        novel Forward-Reconstruction&Backward-Optimization architecture is proposed to generate the global gaussian model.
+                        The evaluation is conducted on two public endoscopic datasets: Scared and C3VD. The experimental results show the
+                        proposed method outperforms state-of-the-art methods in quantitative (PSRN, SSIM and LIPIS) and qualitative
+                        comparisons. The project page is https://iheckzza.github.io/DG-3DGS/.
                     </p>
                 </div>
             </div>
@@ -172,7 +183,6 @@
 </section>
 <!-- End paper abstract -->
 
-
 <!-- Image carousel -->
 <section class="hero is-small">
     <div class="hero-body">
@@ -180,23 +190,27 @@
             <div id="results-carousel" class="carousel results-carousel">
                 <div class="item">
                     <!-- Your image here -->
-                    <img src="static/images/Figure%201.PNG" alt="MY ALT TEXT"/>
+                    <img src="static/images/Figure%201.png" alt="MY ALT TEXT"/>
                     <h2 class="subtitle has-text-centered">
-                        First image description.
+                         The architecture of DG-3DGS From View_N to View_N+1,View_N+1 to View_N+2, and to View_N+.
+                        The gaussian evolution path is presented from G_N to G_N+1,G_N+1 to G_N+2, and finally to G_N+.
                     </h2>
                 </div>
                 <div class="item">
                     <!-- Your image here -->
-                    <img src="static/images/Figure%202.PNG" alt="MY ALT TEXT"/>
+                    <img src="static/images/Figure%202.png" alt="MY ALT TEXT"/>
                     <h2 class="subtitle has-text-centered">
-                        Second image description.
+                        The architecture of proposed Interframe Pose Estimation module based on sequential 2D-3D displacement field
+                        variational optimization. The DTP pretrained module denotes the Dense Prediction Transformer of depth map
+                        pretrained network, and the FM-Net Pretrained denotes the Feature Matching Pretrained network.
                     </h2>
                 </div>
                 <div class="item">
                     <!-- Your image here -->
-                    <img src="static/images/Figure%204.PNG" alt="MY ALT TEXT"/>
+                    <img src="static/images/Figure%203.png" alt="MY ALT TEXT"/>
                     <h2 class="subtitle has-text-centered">
-                        Third image description.
+                        The architecture of proposed dynamic gaussian growing module between interframe View_N and View_N+1.The G_N
+                        and G_N+1 represent the gaussian model under the LCCS of View_N and View_N+1, respectively.
                     </h2>
                 </div>
             </div>
@@ -308,82 +322,6 @@
                     </video>
                     <h3>Trans GT</h3>
                 </div>
-                 w
-<!--&lt;!&ndash;<div class="container">&ndash;&gt;-->
-<!--&lt;!&ndash;    <img src="static/images/carousel1.jpg" alt="Image 1">&ndash;&gt;-->
-<!--&lt;!&ndash;    <img src="static/images/carousel1.jpg" alt="Image 2">&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-<!--&lt;!&ndash; Youtube video &ndash;&gt;-->
-<!--&lt;!&ndash;<section class="hero is-small is-light">&ndash;&gt;-->
-<!--&lt;!&ndash;    <div class="hero-body">&ndash;&gt;-->
-<!--&lt;!&ndash;        <div class="container">&ndash;&gt;-->
-<!--&lt;!&ndash;            &lt;!&ndash; Paper video. &ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;            <h2 class="title is-3">Video Presentation</h2>&ndash;&gt;-->
-<!--&lt;!&ndash;            <div class="columns is-centered has-text-centered">&ndash;&gt;-->
-<!--&lt;!&ndash;                <div class="column is-four-fifths">&ndash;&gt;-->
-
-<!--&lt;!&ndash;                    <div class="publication-video">&ndash;&gt;-->
-<!--&lt;!&ndash;                        &lt;!&ndash; Youtube embed code here &ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;                        <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0"&ndash;&gt;-->
-<!--&lt;!&ndash;                                allow="autoplay; encrypted-media" allowfullscreen></iframe>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                </div>&ndash;&gt;-->
-<!--&lt;!&ndash;            </div>&ndash;&gt;-->
-<!--&lt;!&ndash;        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;    </div>&ndash;&gt;-->
-<!--&lt;!&ndash;</section>&ndash;&gt;-->
-<!--&lt;!&ndash; End youtube video &ndash;&gt;-->
-
-
-<!-- Video carousel -->
-<!--<section class="hero is-small">-->
-<!--    <div class="hero-body">-->
-<!--        <div class="container">-->
-<!--            <h2 class="title is-3">Another Carousel</h2>-->
-<!--            <div id="results-carousel" class="carousel results-carousel">-->
-<!--                <div class="item item-video1">-->
-<!--                    <video poster="" id="video1" autoplay controls muted loop height="100%">-->
-<!--                        &lt;!&ndash; Your video file here &ndash;&gt;-->
-<!--                        <source src="static/videos/carousel1.mp4"-->
-<!--                                type="video/mp4">-->
-<!--                    </video>-->
-<!--                </div>-->
-<!--                <div class="item item-video2">-->
-<!--                    <video poster="" id="video2" autoplay controls muted loop height="100%">-->
-<!--                        &lt;!&ndash; Your video file here &ndash;&gt;-->
-<!--                        <source src="static/videos/carousel2.mp4"-->
-<!--                                type="video/mp4">-->
-<!--                    </video>-->
-<!--                </div>-->
-<!--                <div class="item item-video3">-->
-<!--                    <video poster="" id="video3" autoplay controls muted loop height="100%">\-->
-<!--                        &lt;!&ndash; Your video file here &ndash;&gt;-->
-<!--                        <source src="static/videos/carousel3.mp4"-->
-<!--                                type="video/mp4">-->
-<!--                    </video>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-<!-- End video carousel -->
-
-
-<!-- Paper poster -->
-<!--<section class="hero is-small is-light">-->
-<!--    <div class="hero-body">-->
-<!--        <div class="container">-->
-<!--            <h2 class="title">Poster</h2>-->
-
-<!--            <iframe src="static/pdfs/sample.pdf" width="100%" height="550">-->
-<!--            </iframe>-->
-
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-<!--End paper poster -->
-
 
 <!--BibTex citation -->
 <section class="section" id="BibTeX">
@@ -393,39 +331,6 @@
     </div>
 </section>
 <!--End BibTex citation -->
-
-
-<!--<footer class="footer">-->
-<!--    <div class="container">-->
-<!--        <div class="columns is-centered">-->
-<!--            <div class="column is-8">-->
-<!--                <div class="content">-->
-
-<!--                    <p>-->
-<!--                        This page was built using the <a-->
-<!--                            href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic-->
-<!--                        Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io"-->
-<!--                                                                                target="_blank">Nerfies</a> project-->
-<!--                        page.-->
-<!--                        You are free to borrow the source code of this website, we just ask that you link back to this-->
-<!--                        page in the footer. <br> This website is licensed under a <a rel="license"-->
-<!--                                                                                     href="http://creativecommons.org/licenses/by-sa/4.0/"-->
-<!--                                                                                     target="_blank">Creative-->
-<!--                        Commons Attribution-ShareAlike 4.0 International License</a>.-->
-<!--                    </p>-->
-
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</footer>-->
-
-<!-- Statcounter tracking code -->
-
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-<!-- End of Statcounter Code -->
-
 
 </body>
 </html>
